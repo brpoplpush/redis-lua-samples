@@ -9,3 +9,14 @@ using lua with redis.
 ```sh
 $ redis-cli --ldb --eval scripts/debug.lua
 ```
+
+## Redis lua and json
+
+<https://www.kyne.com.au/~mark/software/lua-cjson-manual.html>
+
+```sh
+$ redis-cli --eval scripts/json.lua
+1) "[1]"
+2) "{\"a\":\"oof\"}"
+3) "a"
+```
