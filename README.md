@@ -20,3 +20,6 @@ $ redis-cli --eval scripts/json.lua
 2) "{\"a\":\"oof\"}"
 3) "a"
 ```
+
+The limitations of `cjson` within the redis should discourage
+you from using it for redis lua scripting.

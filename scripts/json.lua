@@ -9,7 +9,7 @@ local parsed = cjson.decode(json_text)
 
 -- return parsed
 -- (empty list or set)
--- Known limitation of tables
+-- Known limitation of tables parsed via cjson
 -- https://stackoverflow.com/questions/51710571/cjson-decode-in-lua-returns-array-of-empty-arrays-redis-cli
 
 if type(parsed) == 'table' then
